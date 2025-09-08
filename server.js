@@ -3,6 +3,7 @@ const express = require('express');
 
 //Importar as rotas de usuário
 const clientRoutes = require('./src/routes/clientRoutes');
+const productRoutes = require('./src/routes/productRoutes')
 
 //Criar uma aplicação express
 const app = express();
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 
 //Usando as rotas de usuário
 app.use('/api/clients', clientRoutes);
+app.use('/api/products', productRoutes);
 
 //Inicia o servidor
 app.listen(porta, () =>{

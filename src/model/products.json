@@ -1,0 +1,30 @@
+[
+    {
+    "id": 1,
+    "name": "Smartphone",
+    "descricao": "Celular Android com 256GB de armazenamento",
+    "preco": 3999.90,
+    "categoria": "Celulares",
+    "estoque": 12,
+    "ativo": true
+    },
+    {
+    "id": 2,
+    "name": "Notebook",
+    "descricao": "Notebook i7 com 16GB RAM e SSD 512GB",
+    "preco": 5499.00,
+    "categoria": "Computadores",
+    "estoque": 7,
+    "ativo": true
+    },
+    {
+    "id": 3,
+    "name": "Fone",
+    "descricao": "Fone de ouvido Bluetooth com bateria de 40h",
+    "preco": 299.90,
+    "categoria": "Acessórios",
+   "estoque": 0,
+    "ativo": false
+    }
+]
+

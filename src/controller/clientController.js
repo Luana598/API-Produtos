@@ -60,8 +60,32 @@ const createClient = (req, res) => {
         res.status(201).json(newClient);
     }
 
+}
 
 
+const updatedClient = (req, res) => {
+    const id = parseInt(req.params.id);
+    const updatedData = req.body;
+
+    const updatedClient = clientModel.update(id, updatedData);
+
+    if (updatedClient) {
+        res.status(200).json(updatedClient);
+    } else {
+        res.status(404).json({ mensagem: 'Erro: Cliente não encontrado no banco de dados!' });
+    }
+}
+
+const removedClient = (req, res) => {
+    const id = parseInt(req.params.id);
+
+    const removedClient = clientModel.remove(id);
+
+    if (removedClient) {
+        res.status(200).json(removedClient);
+    } else {
+        res.status(404).json({ mensagem: 'Erro: Cliente não encontrado no banco de dados!' });
+    }
 }
 
 
@@ -69,5 +93,7 @@ module.exports = {
     getAllClients,
     getClientById,
     getClientByName,
-    createClient
+    createClient,
+    updatedClient,
+    removedClient
 }

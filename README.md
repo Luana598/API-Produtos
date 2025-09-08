@@ -7,47 +7,43 @@ O projeto foi desenvolvido em Node.js com Express.js, utilizando JavaScript e JS
 
 ## Funcionalidades
 
-* Produtos
+**Produtos**
 
-Criar, listar, atualizar e excluir produtos.
+- Criar, listar, atualizar e excluir produtos.
+- Controlar estoque, preço, categoria e status de disponibilidade.
 
-Controlar estoque, preço, categoria e status de disponibilidade.
+**Clientes**
 
-* Clientes
-
-Cadastrar, listar, atualizar e excluir clientes.
-
-Gerenciar dados básicos como nome, e-mail e endereço.
+- Cadastrar, listar, atualizar e excluir clientes.
+- Gerenciar dados básicos como nome, e-mail e endereço.
 
 ## Arquitetura do Projeto
 
 O projeto segue o padrão MVC (Model-View-Controller), adaptado para APIs REST:
 
-* Model
+**Model**
 
-Responsável pela estrutura dos dados (ex.: Produto.js, Cliente.js).
+- Responsável pela estrutura dos dados (ex.: Produto.js, Cliente.js).
+- Define atributos e regras de negócio (id, nome, descrição, preço, estoque, etc.).
 
-Define atributos e regras de negócio (id, nome, descrição, preço, estoque, etc.).
+**Controller**
 
-* Controller
+- Contém a lógica da aplicação.
+- Manipula requisições HTTP (GET, POST, PUT, DELETE).
 
-Contém a lógica da aplicação.
+**Exemplo**:
 
-Manipula requisições HTTP (GET, POST, PUT, DELETE).
+ ProdutoController.js gerencia criação, atualização e remoção de produtos.
 
-Exemplo: ProdutoController.js gerencia criação, atualização e remoção de produtos.
+**Routes**
 
-* Routes
+- Define os endpoints da API.
 
-Define os endpoints da API.
+**Exemplo**:
 
-Exemplo:
-
-POST /produtos → cria um produto.
-
-GET /clientes → lista clientes.
-
-PUT /produtos/:id → atualiza informações de um produto.
+- POST /produtos → cria um produto.
+- GET /clientes → lista clientes.
+- PUT /produtos/:id → atualiza informações de um produto.
 
 ## Tecnologias Utilizadas
 
@@ -60,5 +56,8 @@ PUT /produtos/:id → atualiza informações de um produto.
 
 ## Prints de teste do projeto
 
-[Testando API-Clientes](./img_clients)
-[Testando API-Produtos](./img_products)
+- [Testando API-Clientes](./img_clients)
+- [Testando API-Produtos](./img_products)
+
+## Autora
+Luana M. Lopes Bomfim

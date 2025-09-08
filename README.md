@@ -60,3 +60,5 @@ JavaScript → linguagem de programação base.
 JSON → formato de troca de dados.
 
 Postman → ferramenta para testes e documentação de endpoints.
+
+[Testando API-Clientes](./img)

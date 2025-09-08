@@ -48,14 +48,14 @@ const getClientByName = (req, res) => {
 const createClient = (req, res) => {
 
     //Pegando os dados que foram enviados pelo Body (Corpo) da Requisiçao
-    const {nome, email, telefone, endereco,
+    const {name, email, telefone, endereco,
         dataCadastro, ativo} = req.body;
 
     //Validar se foram enviados
-    if (!nome || !email || !telefone || !endereco || !dataCadastro || !ativo) {
+    if (!name || !email || !telefone || !endereco || !dataCadastro || ativo === undefined ) {
         return res.status(400).json({ mensagem: 'o preenchimento de todos os dados é obrigatório.'});
     } else {
-        const newClient = clientModel.create({nome, email, telefone, endereco,
+        const newClient = clientModel.create({name, email, telefone, endereco,
             dataCadastro, ativo});
         res.status(201).json(newClient);
     }

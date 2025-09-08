@@ -61,4 +61,7 @@ JSON → formato de troca de dados.
 
 Postman → ferramenta para testes e documentação de endpoints.
 
-[Testando API-Clientes](./img)
+
+# Prints de teste do projeto
+[Testando API-Clientes](./img_clients)
+[Testando API-Produtos](./img_products)
